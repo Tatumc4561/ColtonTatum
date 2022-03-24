@@ -1,1 +1,1 @@
-https://tatumc4561.github.io/ColtonTatum
+www.coltontatum.com
