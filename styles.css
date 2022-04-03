@@ -1,16 +1,68 @@
 body {
+  margin: 0;
   background-image: url(photos/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
 }
 
 .opacitylayer {
   background-color: rgba(0, 0, 0, 0.405);
   height: 100vh;
   width: 100vw;
+}
+.slidein {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-slide,
+.right-slide {
+  opacity: 0;
+  visibility: 0;
+  height: 50%;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+
+  /* animation-name: slidein;
+  animation-duration: 10s; */
+}
+
+.left-slide {
+  align-items: flex-end;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #802a35;
+  transform: translateZ(10px);
+  align-items: center;
+  animation-name: slidein;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  box-shadow: -6px -20px black;
+  overflow: hidden;
+}
+
+.mid {
+  height: 9vw;
+  width: 11vw;
+}
+
+/* 
+.mid:hover {
+  background-color: #1c0307;
+} */
+
+.mid:focus {
+  animation-name: fadeout;
+  /* open popup projects? */
+}
+
+.end {
 }
 
 main {
@@ -42,8 +94,117 @@ h1 {
 
 @media screen and (min-width: 1024px) {
   body {
-    background-size: contain;
-    background-position: center;
-    background-color: #46070f;
+    background-image: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+    background-image: url(photos/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .left-slide-container {
+    border: 30px solid rgb(49, 46, 46);
+    border-right-color: #870a0a49;
+    border-left-color: #261e1e8e;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: repeating-linear-gradient(
+        67.5deg,
+        rgba(207, 12, 12, 0.2) 0px,
+        rgba(181, 8, 8, 0.2) 0px,
+        transparent 0px,
+        transparent 1px,
+        rgba(116, 12, 12, 0.2) 1px,
+        rgba(87, 5, 5, 0.2) 4px,
+        transparent 4px,
+        transparent 5px,
+        rgba(123, 9, 9, 0.2) 5px,
+        rgba(104, 17, 17, 0.2) 8px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(157, 40, 40, 0.2) 0px,
+        rgba(196, 101, 101, 0.2) 0px,
+        transparent 0px,
+        transparent 1px,
+        rgba(204, 94, 94, 0.2) 1px,
+        rgba(204, 43, 43, 0.2) 4px,
+        transparent 4px,
+        transparent 5px,
+        rgba(202, 48, 48, 0.2) 5px,
+        rgba(116, 30, 30, 0.2) 8px
+      ),
+      linear-gradient(135deg, rgb(238, 81, 81), rgb(153, 51, 51));
+  }
+
+  .right-slide-container {
+    border: 30px solid rgb(49, 46, 46);
+    border-left-color: #870a0aa8;
+    border-right-color: #221515bb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: repeating-linear-gradient(
+        67.5deg,
+        rgba(207, 12, 12, 0.2) 0px,
+        rgba(181, 8, 8, 0.2) 0px,
+        transparent 0px,
+        transparent 1px,
+        rgba(116, 12, 12, 0.2) 1px,
+        rgba(87, 5, 5, 0.2) 4px,
+        transparent 4px,
+        transparent 5px,
+        rgba(123, 9, 9, 0.2) 5px,
+        rgba(104, 17, 17, 0.2) 8px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(157, 40, 40, 0.2) 0px,
+        rgba(196, 101, 101, 0.2) 0px,
+        transparent 0px,
+        transparent 1px,
+        rgba(204, 94, 94, 0.2) 1px,
+        rgba(204, 43, 43, 0.2) 4px,
+        transparent 4px,
+        transparent 5px,
+        rgba(202, 48, 48, 0.2) 5px,
+        rgba(116, 30, 30, 0.2) 8px
+      ),
+      linear-gradient(135deg, rgb(238, 81, 81), rgb(153, 51, 51));
+  }
+
+  .slidein {
+    background-color: #570606e5;
+  }
+
+  .left-slide,
+  .right-slide {
+    opacity: 1;
+    visibility: 1;
+    /* animation-name: slidein;
+    animation-duration: 10s; */
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: scaleX(1);
+    margin-right: -23px;
+  }
+  to {
+    margin-right: -91px;
+    transform: scaleX(0);
   }
 }
