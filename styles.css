@@ -40,13 +40,16 @@ main {
   justify-content: space-between;
 }
 
-main a {
+.profilelinks a {
   width: fit-content;
+  padding: 3px;
 
 }
 
-main a img {
-  padding: 15px 0;
+.profilelinks a img, .profilelinks svg {
+  padding: 20px 0;
+  height: 45px;
+  width: 45px;
 
 }
 
@@ -131,15 +134,23 @@ h1 {
 
 .project-info {
   margin: 10px;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .img_filter {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .img_filter a img {
   border: 6px solid rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 650px) {
+ .img_filter {
+   flex-wrap: nowrap;
+ }
 }
 
 @media screen and (min-width: 1024px) {
