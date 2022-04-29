@@ -138,17 +138,19 @@ h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.img_filter {
+#project {
   display: flex;
   flex-wrap: wrap;
 }
 
-.img_filter a img {
+.project-wrapper img {
   border: 6px solid rgb(0, 0, 0);
+  height: 300px;
+  width: 200px;
 }
 
 @media screen and (min-width: 650px) {
- .img_filter {
+ #project {
    flex-wrap: nowrap;
  }
 }
