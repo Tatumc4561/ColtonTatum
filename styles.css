@@ -132,10 +132,9 @@ h1 {
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  max-height: 400px;
   max-width: 90%;
   border-bottom: 4px solid black;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .project-wrapper h3{
