@@ -71,6 +71,9 @@ h1 {
   font-size: 3.5vh;
   padding: 0;
   margin: 0;
+  border-bottom: 4px solid black;
+  width: 90%;
+  text-align: center;
 }
 
 #sectiontwo {
@@ -128,14 +131,28 @@ h1 {
 
 .project-wrapper {
   display: flex;
+  flex-direction: column;
   max-height: 400px;
-  max-width: 90%
+  max-width: 90%;
+  border-bottom: 4px solid black;
+  margin: 10px 0;
+}
+
+.project-wrapper h3{
+  padding: 0;
+  margin: 0;
+
+  color: white;
+  font-family: "Lobster", cursive;
+  text-shadow: 2px 2px black;
+  font-size: 20px;
 }
 
 .project-info {
   margin: 10px;
   font-size: 18px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgba(245, 245, 245, 0.808);
 }
 
 #project {
@@ -145,8 +162,9 @@ h1 {
 
 .project-wrapper img {
   border: 6px solid rgb(0, 0, 0);
-  height: 300px;
-  width: 200px;
+  height: 200px;
+  width: 120px;
+
 }
 
 @media screen and (min-width: 650px) {
