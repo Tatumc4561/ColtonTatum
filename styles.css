@@ -76,10 +76,10 @@ h1 {
   text-align: center;
 }
 
-#sectiontwo {
+.section-two-container {
   top: 95%;
   position: absolute;
-  height: 60vh;
+  height: 100%;
   width: 100%;
   z-index: 3;
   transition: top 2s;
@@ -88,8 +88,8 @@ h1 {
   align-items: center;
 }
 
-#sectiontwo:hover {
-  top: 40vh;
+.sectionTwoslide {
+  top: 10vh;
 }
 
 .arrow-container {
@@ -127,12 +127,20 @@ h1 {
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+  padding-bottom: 100px;
+}
+
+.carousel {
+  scroll-snap-type: y mandatory;
+  scroll-padding: 10px 0;
+  scroll-snap-align: start;
 }
 
 .project-wrapper {
   display: flex;
   flex-direction: column;
   max-width: 90%;
+  height: 100%;
   border-bottom: 4px solid black;
   margin: 20px 0;
 }
