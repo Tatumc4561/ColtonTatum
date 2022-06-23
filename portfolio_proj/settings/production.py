@@ -5,7 +5,7 @@ DEBUG = False
 
 SECRET_KEY = os.environ["SECRET_KEY"]
 
-ALLOWED_HOSTS = ["colton-portfolio.herokuapp.com"]
+ALLOWED_HOSTS = ["tatum-c.herokuapp.com"]
 
 
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
