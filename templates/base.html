@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script defer src="{% static 'js/portfolio.js' %}"></script>
+    {% block 'title' %}{% endblock 'title' %}
+</head>
+
+<body>
+    {% comment %} Top Nav {% endcomment %}
+    <div class="top-nav">
+        <div class="title-name">
+            <a href="https://github.com/Tatumc4561">
+                <img src="" alt="">
+                <p class="webheader-text">Colton Tatum</p>
+            </a>
+        </div>
+        <div class="contact">
+            <a href="mailto:tatumc4561@gmail.com">Contact</a>
+        </div>
+    </div>
+
+    {% comment %} Projects {% endcomment %}
+    {% block 'content' %}
+
+    {% endblock 'content' %}
+
+</body>
+
+</html>
