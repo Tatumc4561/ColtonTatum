@@ -11,6 +11,7 @@ ALLOWED_HOSTS = ["tatum-c.herokuapp.com"]
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["NAME"],
     }
 }
 # db_from_env = dj_database_url.config(conn_max_age=600)
