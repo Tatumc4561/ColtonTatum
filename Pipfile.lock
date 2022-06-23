@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f6bfacb19f108d650b234929659c96b3321b6be76f0161dee550851ee82bce83"
+            "sha256": "6cba41e9d23869b15000bcb73e5e5357384388c5cc43deaf4bde6d6048c781ba"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -21,7 +21,7 @@
                 "sha256:1d2880b792ae8757289136f1db2b7b99100ce959b2aa57fd69dab783d05afac4",
                 "sha256:4a29362a6acebe09bf1d6640db38c1dc3d9217c68e6f9f6204d72667fc19a424"
             ],
-            "markers": "python_version >= '3.7'",
+            "index": "pypi",
             "version": "==3.5.2"
         },
         "dj-database-url": {
@@ -80,6 +80,14 @@
             ],
             "markers": "sys_platform == 'win32'",
             "version": "==2022.1"
+        },
+        "werkzeug": {
+            "hashes": [
+                "sha256:1ce08e8093ed67d638d63879fd1ba3735817f7a80de3674d293f5984f25fb6e6",
+                "sha256:72a4b735692dd3135217911cbeaa1be5fa3f62bffb8745c5215420a03dc55255"
+            ],
+            "index": "pypi",
+            "version": "==2.1.2"
         },
         "whitenoise": {
             "hashes": [
