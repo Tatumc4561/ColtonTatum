@@ -92,6 +92,10 @@ body {
     border-bottom: 2px solid black;
 }
 
+.source-wrap {
+    display: flex;
+}
+
 .app-desc {
     font-size: 20px;
 }
@@ -99,15 +103,16 @@ body {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-.desc-list {
-    display: flex;
+.desc-cat {
     font-size: 20px;
     font-weight: 700;
+    width: 150px;
 }
 
-.list-text {
+.desc-text {
     margin-left: 10px;
     font-size: 20px;
     font-weight: 500;
