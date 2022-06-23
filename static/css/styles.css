@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap');
 body {
-    background-color: aquamarine;
+    background-image: linear-gradient(327deg, transparent 0%, transparent 8%,rgba(63, 106, 202,0.08) 8%, rgba(63, 106, 202,0.08) 46%,transparent 46%, transparent 100%),linear-gradient(287deg, transparent 0%, transparent 21%,rgba(63, 106, 202,0.08) 21%, rgba(63, 106, 202,0.08) 53%,transparent 53%, transparent 100%),linear-gradient(468deg, transparent 0%, transparent 35%,rgba(63, 106, 202,0.08) 35%, rgba(63, 106, 202,0.08) 91%,transparent 91%, transparent 100%),linear-gradient(270deg, rgb(255,255,255),rgb(255,255,255));
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -15,7 +16,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 50px;
-    background-color: rgb(107, 91, 91);
+    background-color: rgba(107, 77, 77, 0.937);
     position: fixed;
 }
 
@@ -26,16 +27,36 @@ body {
     height: 100%;
     width: fit-content;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.589);
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 25px;
     margin-left: 20px;
 }
 
-.contact a {
+.webheader-text {
+    margin-left: 10px;
+}
+
+.contact {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.top-href {
     text-decoration: none;
     font-size: 25px;
-    margin-right: 20px;
-    color: white;
+    color: rgba(255, 255, 255, 0.589);
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    margin-right: 10px;
+}
+
+.top-icon {
+    width: 32px;
+    height: 32px;
 }
 
 
@@ -49,9 +70,13 @@ body {
     align-items: center;
 }
 
+* {
+    color: rgba(2, 2, 2, 0.548);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
 .main-title {
     font-size: 30px;
-    font-weight: 800;
 
 }
 
@@ -63,6 +88,7 @@ body {
     margin: 80px 0;
     justify-content: center;
     align-items: center;
+
 }
 
 .app-href {
@@ -118,6 +144,12 @@ ul {
     font-weight: 500;
 }
 
+.view-app-href {
+    width: 0;
+    height: 0;
+
+}
+
 .view-app {
     margin-top: 40px;
     width: 100px;
@@ -127,7 +159,13 @@ ul {
     border-radius: 10px;
 }
 
+.view-app:hover {
+    background-color: rgb(96, 56, 96);
+    cursor: pointer;
+}
+
 .app-break {
     width: 80%;
     border-bottom: 2px solid black;
+    margin-top: 40px;
 }
