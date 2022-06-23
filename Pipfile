@@ -11,6 +11,7 @@ psycopg2 = "*"
 whitenoise = "*"
 werkzeug = "*"
 asgiref = "*"
+tzdata = "*"
 
 [dev-packages]
 
