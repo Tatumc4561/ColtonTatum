@@ -8,6 +8,20 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 ALLOWED_HOSTS = ["tatum-c.herokuapp.com"]
 
 
+DATABASES = {
+    "default": {
+        "ENGINE": os.environ["DATABASE_URL"],
+        "NAME": os.environ["NAME"],
+        "USER": os.environ["USER"],
+        "PASSWORD": os.environ["PASSWORD"],
+        "HOST": os.environ["HOST"],
+        "PORT": os.environ["PORT"],
+    }
+}
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES["default"].update(db_from_env)
+
+
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
