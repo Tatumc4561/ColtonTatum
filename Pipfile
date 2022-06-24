@@ -11,6 +11,8 @@ whitenoise = "*"
 werkzeug = "*"
 asgiref = "*"
 tzdata = "*"
+dj-database-url = "*"
+gunicorn = "*"
 
 [dev-packages]
 
