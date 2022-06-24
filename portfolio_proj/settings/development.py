@@ -1,5 +1,6 @@
 from portfolio_proj.settings.common import *
 import dotenv
+import dj_database_url
 
 
 DEBUG = True
