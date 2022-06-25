@@ -5,5 +5,5 @@ def index(request):
 
     return render(
         request,
-        "portfolio_app/index2.html",
+        "portfolio_app/index.html",
     )
