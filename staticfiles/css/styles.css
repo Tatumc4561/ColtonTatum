@@ -150,6 +150,10 @@ ul {
 
 }
 
+.button-wrap {
+    display: flex;
+}
+
 .view-app {
     margin-top: 40px;
     width: 100px;
